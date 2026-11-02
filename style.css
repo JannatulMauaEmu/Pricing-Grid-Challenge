@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: darkblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+    
+ .container{
+    width: 33%;
+    max-width:360px;
+    min-width: 280px;
+    padding: 15px;
+ }   
+    
+    
+   .price{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px black;
+    transition: 0.3s ease;
+    height: 100%;
+   }
+
+.price:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3:first-child {
+    text-align: center;
+    padding: 20px 10px;
+    background: #f1f3f5;
+    color: #22213f;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container:nth-of-type(2) h3:first-child {
+    background: linear-gradient(100deg, #b8e3f0, #b34af0);
+    color: white;
+}
+
+.container:nth-of-type(3) h3:first-child {
+    background: linear-gradient(100deg, #f49bb5, #ffc45c);
+    color: white;
+}
+
+.card p:first-of-type {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    color: #22213f;
+    margin: 55px 0 30px;
+}
+
+.card sup {
+    font-size: 20px;
+}
+
+.card sub {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card h3:not(:first-child) {
+    text-align: center;
+    font-size: 16px;
+    margin: 25px 0;
+    color: #22213f;
+}
+
+.card p:not(:first-of-type) {
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+    min-height: 65px;
+}
+
+button {
+    width: 100%;
+    padding: 17px;
+    margin: 25px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: white;
+    color: #22213f;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #22213f;
+    color: white;
+}
+
+.container:nth-of-type(2) button {
+    background: #22213f;
+    color: white;
+    border: none;
+}
+
+.container:nth-of-type(2) button:hover {
+    background: mediumorchid;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    margin: 18px 0;
+    color: grey;
+    font-size: 15px;
+}
+
+ul li i {
+    color: lightgreen;
+    margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+}
